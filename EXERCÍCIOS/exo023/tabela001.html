@@ -12,20 +12,18 @@
 
     table{
       width: 400px;
+      height: 400px;
       border-collapse: collapse;/*Pra ficar coladinho,junto e separate, pra ficar separado*/
     }
-
-    tr.linha{
-      background-color: gray;
-    }
-
-    td.dado{
-      background-color: yellow;
-    }
-
     td{
       border: 1px solid black;
       padding: 8px;
+      text-align: center;/*Alinhamento horizontal: center,left, right*/
+      vertical-align: middle;/*Alinhamento vertical: top, bottom, middle*/
+    }
+
+    .numero {
+      text-align: right;/*Se quiser que um numero seja alinhado a direita*/
     }
   </style>
 </head>
@@ -39,22 +37,22 @@
 
   <table>
     <tr> <!--1° linha-->
-      <td class="dado">A1</td>
+      <td>A1</td>
       <td>B1</td>
-      <td class="dado ">C1</td>
+      <td>C1</td>
     </tr>
-     <tr class="linha"> <!--2° linha-->
+     <tr> <!--2° linha-->
       <td>A2</td>
       <td>B2</td>
       <td>C2</td>
     </tr>
      <tr> <!--3° linha-->
-      <td class="dado">A3</td>
+      <td class="numero">A3</td>
       <td>B3</td>
-      <td class="dado">C3</td>
+      <td>C3</td>
     </tr>
-     <tr class="linha"> <!--4° linha-->
-      <td>A4</td>
+     <tr> <!--4° linha-->
+      <td class="numero">A4</td>
       <td>B4</td>
       <td>C4</td>
     </tr>
