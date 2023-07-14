@@ -12,6 +12,7 @@
     table{
       width: 500px;
       border-collapse: collapse;
+      position: relative;
     }
     caption{
       font-size: 1.5em;
@@ -26,6 +27,21 @@
     thead, tfoot{
       background-color: gray;
       color: white;
+    }
+
+    thead > tr > th{
+      position: sticky;
+      top: -1px;
+      background-color: rgb(38, 38, 38);
+    }
+
+    tbody > tr:nth-child(odd){
+      background-color: aqua;
+    }
+    /*nth-child(2n) = pula uma linha e vai fzr o efeito na seguinte linha, uma sim, uma não. ou usar odd ou 2n - 1 : todas as linha impares ou even ou 2n : todas as linhas pares*/
+
+    tbody > tr:nth-child(even) {
+      background-color: lightgray;
     }
 
     td.num{
@@ -178,6 +194,11 @@
             </tr>
           </tfoot>
     </table>
+    <!--Se tiver um texto a posião sticky não vai atrapalhar, vai sumindo junto com a tabela. Não funciona em todos os navegadores-->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quasi qui, facilis quia nihil sunt, minus assumenda blanditiis laudantium sequi unde repellat perspiciatis. Enim provident fuga nisi totam. Dignissimos, corporis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio odit asperiores autem magni? Repudiandae nisi enim dicta cumque maxime eos nihil qui delectus exercitationem veritatis! Nobis doloremque veniam in blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos laborum similique porro reprehenderit aut quibusdam voluptate ad eum quia tenetur doloremque praesentium sint, repudiandae natus commodi molestias ratione. Reiciendis, deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur libero ipsam ducimus ex iusto sit temporibus ab ipsum possimus sequi quae tempora similique, voluptates beatae, amet delectus laborum reiciendis quos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perferendis vitae, praesentium inventore quas pariatur velit sunt nam provident eius excepturi sint dicta expedita at necessitatibus magni voluptate repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste quidem, voluptates doloribus modi, delectus blanditiis sint perspiciatis voluptas asperiores, nulla laborum ab fugiat ducimus natus quo. Error, quibusdam deleniti.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quasi qui, facilis quia nihil sunt, minus assumenda blanditiis laudantium sequi unde repellat perspiciatis. Enim provident fuga nisi totam. Dignissimos, corporis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio odit asperiores autem magni? Repudiandae nisi enim dicta cumque maxime eos nihil qui delectus exercitationem veritatis! Nobis doloremque veniam in blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos laborum similique porro reprehenderit aut quibusdam voluptate ad eum quia tenetur doloremque praesentium sint, repudiandae natus commodi molestias ratione. Reiciendis, deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur libero ipsam ducimus ex iusto sit temporibus ab ipsum possimus sequi quae tempora similique, voluptates beatae, amet delectus laborum reiciendis quos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perferendis vitae, praesentium inventore quas pariatur velit sunt nam provident eius excepturi sint dicta expedita at necessitatibus magni voluptate repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste quidem, voluptates doloribus modi, delectus blanditiis sint perspiciatis voluptas asperiores, nulla laborum ab fugiat ducimus natus quo. Error, quibusdam deleniti.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quasi qui, facilis quia nihil sunt, minus assumenda blanditiis laudantium sequi unde repellat perspiciatis. Enim provident fuga nisi totam. Dignissimos, corporis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio odit asperiores autem magni? Repudiandae nisi enim dicta cumque maxime eos nihil qui delectus exercitationem veritatis! Nobis doloremque veniam in blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos laborum similique porro reprehenderit aut quibusdam voluptate ad eum quia tenetur doloremque praesentium sint, repudiandae natus commodi molestias ratione. Reiciendis, deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur libero ipsam ducimus ex iusto sit temporibus ab ipsum possimus sequi quae tempora similique, voluptates beatae, amet delectus laborum reiciendis quos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perferendis vitae, praesentium inventore quas pariatur velit sunt nam provident eius excepturi sint dicta expedita at necessitatibus magni voluptate repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste quidem, voluptates doloribus modi, delectus blanditiis sint perspiciatis voluptas asperiores, nulla laborum ab fugiat ducimus natus quo. Error, quibusdam deleniti.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quasi qui, facilis quia nihil sunt, minus assumenda blanditiis laudantium sequi unde repellat perspiciatis. Enim provident fuga nisi totam. Dignissimos, corporis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio odit asperiores autem magni? Repudiandae nisi enim dicta cumque maxime eos nihil qui delectus exercitationem veritatis! Nobis doloremque veniam in blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos laborum similique porro reprehenderit aut quibusdam voluptate ad eum quia tenetur doloremque praesentium sint, repudiandae natus commodi molestias ratione. Reiciendis, deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur libero ipsam ducimus ex iusto sit temporibus ab ipsum possimus sequi quae tempora similique, voluptates beatae, amet delectus laborum reiciendis quos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perferendis vitae, praesentium inventore quas pariatur velit sunt nam provident eius excepturi sint dicta expedita at necessitatibus magni voluptate repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste quidem, voluptates doloribus modi, delectus blanditiis sint perspiciatis voluptas asperiores, nulla laborum ab fugiat ducimus natus quo. Error, quibusdam deleniti.</p>
   
 </body>
 </html>
