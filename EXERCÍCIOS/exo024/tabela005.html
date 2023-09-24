@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colgroup</title>
+
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+    }
+
+    div#meucontainer{
+      overflow-x: auto;
+    }
+    table{
+      border-collapse: collapse;
+      width: 800px;
+      height: 400px;
+    }
+
+    /*col.nome{
+      background-color: blue;
+    }
+
+    col.idade{
+      background-color: red;
+    }
+
+    col.sexo{
+      background-color: gray;
+    }
+
+    col.Prof{
+      background-color: brown;
+    } ou*/
+
+    col.colgroup{
+      background-color: blue;
+    }
+
+    col.colgroup2{
+      background-color: red;
+    }
+    caption{
+      font-size: 2.3em;
+      font-weight:bold;
+      font-family: 'Times New Roman', Times, serif;
+      padding: 10px;
+      color: aqua;
+      padding-bottom: 45px;
+    }
+    
+    th,td{
+      border: 1px solid gray;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tentando usar overflow</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt minima vero est vel nam, magnam quibusdam cumque dolor molestiae delectus vitae voluptatum quam! Eum minus molestiae, repudiandae explicabo magni consequuntur!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio aperiam ducimus quidem, explicabo tempora beatae vel possimus distinctio qui voluptate libero rerum, consequatur ex molestias rem corporis magnam obcaecati omnis!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, quibusdam mollitia blanditiis expedita dignissimos consequatur distinctio corrupti tempore, necessitatibus dolore modi, dolorem voluptas hic porro natus! Minus neque corporis odit?
+  </p>
+  <div id="meucontainer">
+    <table>
+      <colgroup>
+        <!--<col class="nome">
+        <col class="idade">
+        <col class="sexo">
+        <col class="Prof"> ou !-->
+    
+        <col class="colgroup" span="2">
+        <col class="colgroup2" span="2">
+      </colgroup>
+      <caption>Minha Tabela</caption>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Sexo</th>
+          <th>Profissão</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>Fedson</td>
+            <td>22</td>
+            <td>M</td>
+            <td>Desenvolvedor</td>
+          </tr>
+          <tr>
+            <td>Maria</td>
+            <td>21</td>
+            <td>F</td>
+            <td>Administradora</td>
+          </tr>
+          <tr>
+            <td>Andréia</td>
+            <td>32</td>
+            <td>F</td>
+            <td>Contadora</td>
+          </tr>
+          <tr>
+            <td>Michelande</td>
+            <td>16</td>
+            <td>F</td>
+            <td>Médica</td>
+          </tr>
+          <tr>
+            <td>Victor</td>
+            <td>43</td>
+            <td>M</td>
+            <td>Analista</td>
+          </tr>
+        </tbody>
+    
+      </thead>
+    </table>
+  </div>
+  
+</body>
+</html>
